@@ -94,6 +94,22 @@ be taught over two full days of instruction.
 </p>
 
 <hr/>
+{% comment %}
+  SCHEDULE
+
+  Show the workshop's schedule.  Edit the items and times in the table
+  to match your plans.  You may also want to change 'Day 1' and 'Day
+  2' to be actual dates or days of the week.
+{% endcomment %}
+<h2 id="schedule">Schedule</h2>
+
+{% if page.carpentry == "dc" %}
+  {% include sc/schedule.html %}
+{% elsif page.carpentry == "swc" %}
+  {% include dc/schedule.html %}
+{% elsif page.carpentry == "lc" %}
+  {% include lc/schedule.html %}
+{% endif %}
 
 > ## Getting Started
 >
@@ -124,22 +140,6 @@ be taught over two full days of instruction.
 |[Data wrangling and processing](https://datacarpentry.github.io/wrangling-genomics/) | Use command-line tools to perform quality control, align reads to a reference genome, and identify and visualize between-sample variation. |
 |[Introduction to cloud computing for genomics](http://www.datacarpentry.org/cloud-genomics/) | Learn how to work with Amazon AWS cloud computing and how to transfer data between your local computer and cloud resources. 
 
-{% comment %}
-  SCHEDULE
-
-  Show the workshop's schedule.  Edit the items and times in the table
-  to match your plans.  You may also want to change 'Day 1' and 'Day
-  2' to be actual dates or days of the week.
-{% endcomment %}
-<h2 id="schedule">Schedule</h2>
-
-{% if page.carpentry == "swc" %}
-  {% include sc/schedule.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/schedule.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/schedule.html %}
-{% endif %}
 
 
 {% comment %}
