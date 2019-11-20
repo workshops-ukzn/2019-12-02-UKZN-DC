@@ -104,7 +104,7 @@ be taught over two full days of instruction.
 <h2 id="schedule">Schedule</h2>
 
 {% if page.carpentry == "dc" %}
-  {% include schedule.html %}
+  {% schedule.html %}
 {% endif %}
 
 > ## Getting Started
