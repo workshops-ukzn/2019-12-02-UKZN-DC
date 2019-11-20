@@ -29,20 +29,6 @@ be taught over two full days of instruction. </s></p>
 </p>
 
 {% comment %}
-  INTRODUCTION
-
-  Edit the general explanatory paragraph below if you want to change
-  the pitch.
-{% endcomment %}
-{% if page.carpentry == "swc" %}
-  {% include sc/intro.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/intro.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/intro.html %}
-{% endif %}
-
-{% comment %}
   AUDIENCE
 
   Explain who your audience is.  (In particular, tell readers if the
@@ -56,37 +42,6 @@ be taught over two full days of instruction. </s></p>
   {% include lc/who.html %}
 {% endif %}
 
-{% comment %}
-  LOCATION
-
-  This block displays the address and links to maps showing directions
-  if the latitude and longitude of the workshop have been set.  You
-  can use https://itouchmap.com/latlong.html to find the lat/long of an
-  address.
-{% endcomment %}
-{% if page.latlng %}
-<p id="where">
-  <strong>Where:</strong>
-  {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
-</p>
-{% endif %}
-
-{% comment %}
-  DATE
-
-  This block displays the date and links to Google Calendar.
-{% endcomment %}
-{% if page.humandate %}
-<p id="when">
-  <strong>When:</strong>
-  {{page.humandate}}.
-  {% include workshop_calendar.html %}
-</p>
-{% endif %}
 
 {% comment %}
   SPECIAL REQUIREMENTS
@@ -108,16 +63,6 @@ be taught over two full days of instruction. </s></p>
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
 
-{% comment %}
-  ACCESSIBILITY
-
-  Modify the block below if there are any barriers to accessibility or
-  special instructions.
-{% endcomment %}
-<p id="accessibility">
-  <strong>Accessibility:</strong> We are committed to making this workshop
-  accessible to everybody. Please get in touch (contact details below) if we can
-  help making learning easier for you.
 
 
 
