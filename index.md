@@ -1,4 +1,20 @@
 ---
+layout: workshop      # DON'T CHANGE THIS.
+carpentry: "dc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
+venue: "UKZN, Westville Campus"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "Seminar Room 5, Govan Mbeki, Research Office, Westville Campus"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "za"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "-29.818203, 30.945906"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+humandate: "2nd and 3rd December, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "8:30 - 16:30"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2019-12-02      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2019-12-03        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructors: ["Moses Okpeku, Matthew Adeleke, Tadiwanashe Gutsa, Oluwafisayo Kaka"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helpers: ["Naomi Kingu, Ayodeji Ogunode"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["tadigutsah@gmail.com, oluwafisayo.kaka@gmail.com "]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes:    https://pad.carpentries.org/2019-12-02-UKZN-DC         # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
+eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 Data Carpentry’s aim is to teach researchers basic concepts, skills, and tools for working
@@ -9,7 +25,13 @@ utilities, use of command-line tools to analyze sequence quality and
 perform variant calling, and connecting to and using cloud computing. This workshop is designed to 
 be taught over two full days of instruction.
 
-**Please note that workshop materials for working with Genomics data in R are in “alpha” development. These lessons are available for review and for informal teaching experiences, but are not yet part of The Carpentries’ official lesson offerings.**
+</p>
+
+<p style = "color:red;"><strong>Registration:</strong> Please complete the online registration form at <a href="https://forms.gle/EmrC8S5e3ERuDKZV7">https://forms.gle/EmrC8S5e3ERuDKZV7</a>. Limited space is available. The workshop is free to attend but a R500 no-show fee will be payable by a registered participant who does not show up to the workshop without giving the workshop organisers at least 3 days notice.
+</p>
+
+<hr/>
+
 
 Interested in teaching these materials? We have an [onboarding video](https://www.youtube.com/watch?v=zgdutO5tejo) and accompanying [slides](https://docs.google.com/presentation/d/1fLlT2lPv32DqCFpRPPdHZBNHiQTpK79wd5Z3nsFwL3s/edit#slide=id.p) available to prepare Instructors to teach these lessons. After watching this video, please contact team@carpentries.org so that we can record your status as an onboarded Instructor. Instructors who have completed onboarding will be given priority status for teaching at centrally-organized Data Carpentry Genomics workshops.
 
