@@ -16,14 +16,13 @@ email: ["tadigutsah@gmail.com, oluwafisayo.kaka@gmail.com"]    # boxed, comma-se
 collaborative_notes:     https://pad.carpentries.org/2019-12-02-UKZN-DC        # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
-<p><s>
 Data Carpentry’s aim is to teach researchers basic concepts, skills, and tools for working
 with data so that they can get more done in less time, and with less pain. This workshop
 teaches data management and analysis for genomics research including: 
 best practices for organization of bioinformatics projects and data, use of command-line 
 utilities, use of command-line tools to analyze sequence quality and
 perform variant calling, and connecting to and using cloud computing. This workshop is designed to 
-be taught over two full days of instruction. </s></p>
+be taught over two full days of instruction. 
 
 <p style = "color:red;"><strong>Registration:</strong> Please complete the online registration form at <a href="https://forms.gle/EmrC8S5e3ERuDKZV7">https://forms.gle/EmrC8S5e3ERuDKZV7</a>. Limited space is available. The workshop is free to attend but a R500 no-show fee will be payable by a registered participant who does not show up to the workshop without giving the workshop organisers at least 3 days notice.
 </p>
