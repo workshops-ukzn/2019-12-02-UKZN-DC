@@ -23,7 +23,7 @@ best practices for organization of bioinformatics projects and data, use of comm
 utilities, use of command-line tools to analyze sequence quality and
 perform variant calling, and connecting to and using cloud computing. This workshop is designed to 
 be taught over two full days of instruction. 
-</hr>
+
 
 <p style = "color:red;"><strong>Registration:</strong> Please complete the online registration form at <a href="https://forms.gle/EmrC8S5e3ERuDKZV7">https://forms.gle/EmrC8S5e3ERuDKZV7</a>. Limited space is available. The workshop is free to attend but a R500 no-show fee will be payable by a registered participant who does not show up to the workshop without giving the workshop organisers at least 3 days notice.
 </p>
@@ -120,6 +120,22 @@ be taught over two full days of instruction.
 | [Introduction to the command line](https://datacarpentry.github.io/shell-genomics/) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. |
 |[Data wrangling and processing](https://datacarpentry.github.io/wrangling-genomics/) | Use command-line tools to perform quality control, align reads to a reference genome, and identify and visualize between-sample variation. |
 |[Introduction to cloud computing for genomics](http://www.datacarpentry.org/cloud-genomics/) | Learn how to work with Amazon AWS cloud computing and how to transfer data between your local computer and cloud resources. 
+
+{% comment %}
+  Collaborative Notes
+
+  If you want to use an Etherpad, go to
+
+      http://pad.software-carpentry.org/2019-12-02-UKZN-DC
+
+  where 'YYYY-MM-DD-site' is the identifier for your workshop,
+  e.g., '2015-06-10-esu'.
+{% endcomment %}
+{% if page.collaborative_notes %}
+<p id="collaborative_notes">
+  We will use this <a href="{{page.collaborative_notes}}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+</p>
+{% endif %}
 
 # Optional Additional Lessons
 
