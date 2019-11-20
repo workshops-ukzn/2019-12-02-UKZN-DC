@@ -16,6 +16,8 @@ email: ["tadigutsah@gmail.com, oluwafisayo.kaka@gmail.com"]    # boxed, comma-se
 collaborative_notes:     https://pad.carpentries.org/2019-12-02-UKZN-DC        # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
+
+<h2 id="general">General Information</h2>
 Data Carpentry’s aim is to teach researchers basic concepts, skills, and tools for working
 with data so that they can get more done in less time, and with less pain. This workshop
 teaches data management and analysis for genomics research including: 
@@ -63,7 +65,6 @@ be taught over two full days of instruction.
   {% endif %}
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
-
 
 
 
@@ -122,6 +123,24 @@ be taught over two full days of instruction.
 | [Introduction to the command line](https://datacarpentry.github.io/shell-genomics/) |  Learn to navigate your file system, create, copy, move, and remove files and directories, and automate repetitive tasks using scripts and wildcards. |
 |[Data wrangling and processing](https://datacarpentry.github.io/wrangling-genomics/) | Use command-line tools to perform quality control, align reads to a reference genome, and identify and visualize between-sample variation. |
 |[Introduction to cloud computing for genomics](http://www.datacarpentry.org/cloud-genomics/) | Learn how to work with Amazon AWS cloud computing and how to transfer data between your local computer and cloud resources. 
+
+{% comment %}
+  SCHEDULE
+
+  Show the workshop's schedule.  Edit the items and times in the table
+  to match your plans.  You may also want to change 'Day 1' and 'Day
+  2' to be actual dates or days of the week.
+{% endcomment %}
+<h2 id="schedule">Schedule</h2>
+
+{% if page.carpentry == "swc" %}
+  {% include sc/schedule.html %}
+{% elsif page.carpentry == "dc" %}
+  {% include dc/schedule.html %}
+{% elsif page.carpentry == "lc" %}
+  {% include lc/schedule.html %}
+{% endif %}
+
 
 {% comment %}
   Collaborative Notes
