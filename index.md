@@ -94,18 +94,6 @@ be taught over two full days of instruction.
 </p>
 
 <hr/>
-{% comment %}
-  SCHEDULE
-
-  Show the workshop's schedule.  Edit the items and times in the table
-  to match your plans.  You may also want to change 'Day 1' and 'Day
-  2' to be actual dates or days of the week.
-{% endcomment %}
-<h2 id="schedule">Schedule</h2>
-
-{% if page.carpentry == "dc" %}
-  {% schedule.html %}
-{% endif %}
 
 > ## Getting Started
 >
