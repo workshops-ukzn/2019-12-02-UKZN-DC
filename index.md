@@ -16,14 +16,110 @@ email: ["tadigutsah@gmail.com, oluwafisayo.kaka@gmail.com"]    # boxed, comma-se
 collaborative_notes:     https://pad.carpentries.org/2019-12-02-UKZN-DC        # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
-
+<p><s>
 Data Carpentry’s aim is to teach researchers basic concepts, skills, and tools for working
 with data so that they can get more done in less time, and with less pain. This workshop
 teaches data management and analysis for genomics research including: 
 best practices for organization of bioinformatics projects and data, use of command-line 
 utilities, use of command-line tools to analyze sequence quality and
 perform variant calling, and connecting to and using cloud computing. This workshop is designed to 
-be taught over two full days of instruction.
+be taught over two full days of instruction. </s></p>
+
+<p style = "color:red;"><strong>Registration:</strong> Please complete the online registration form at <a href="https://forms.gle/EmrC8S5e3ERuDKZV7">https://forms.gle/EmrC8S5e3ERuDKZV7</a>. Limited space is available. The workshop is free to attend but a R500 no-show fee will be payable by a registered participant who does not show up to the workshop without giving the workshop organisers at least 3 days notice.
+</p>
+
+{% comment %}
+  INTRODUCTION
+
+  Edit the general explanatory paragraph below if you want to change
+  the pitch.
+{% endcomment %}
+{% if page.carpentry == "swc" %}
+  {% include sc/intro.html %}
+{% elsif page.carpentry == "dc" %}
+  {% include dc/intro.html %}
+{% elsif page.carpentry == "lc" %}
+  {% include lc/intro.html %}
+{% endif %}
+
+{% comment %}
+  AUDIENCE
+
+  Explain who your audience is.  (In particular, tell readers if the
+  workshop is only open to people from a particular institution.
+{% endcomment %}
+{% if page.carpentry == "swc" %}
+  {% include sc/who.html %}
+{% elsif page.carpentry == "dc" %}
+  {% include dc/who.html %}
+{% elsif page.carpentry == "lc" %}
+  {% include lc/who.html %}
+{% endif %}
+
+{% comment %}
+  LOCATION
+
+  This block displays the address and links to maps showing directions
+  if the latitude and longitude of the workshop have been set.  You
+  can use https://itouchmap.com/latlong.html to find the lat/long of an
+  address.
+{% endcomment %}
+{% if page.latlng %}
+<p id="where">
+  <strong>Where:</strong>
+  {{page.address}}.
+  Get directions with
+  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+</p>
+{% endif %}
+
+{% comment %}
+  DATE
+
+  This block displays the date and links to Google Calendar.
+{% endcomment %}
+{% if page.humandate %}
+<p id="when">
+  <strong>When:</strong>
+  {{page.humandate}}.
+  {% include workshop_calendar.html %}
+</p>
+{% endif %}
+
+{% comment %}
+  SPECIAL REQUIREMENTS
+
+  Modify the block below if there are any special requirements.
+{% endcomment %}
+<p id="requirements">
+  <strong>Requirements:</strong> Participants must bring a laptop with a
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
+  on. They should have a few specific software packages installed (listed
+  <a href="#setup">below</a>). They are also required to abide by
+  {% if page.carpentry == "swc" %}
+  Software Carpentry's
+  {% elsif page.carpentry == "dc" %}
+  Data Carpentry's
+  {% elsif page.carpentry == "lc" %}
+  Library Carpentry's
+  {% endif %}
+  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+</p>
+
+{% comment %}
+  ACCESSIBILITY
+
+  Modify the block below if there are any barriers to accessibility or
+  special instructions.
+{% endcomment %}
+<p id="accessibility">
+  <strong>Accessibility:</strong> We are committed to making this workshop
+  accessible to everybody. Please get in touch (contact details below) if we can
+  help making learning easier for you.
+
+
 
 {% comment %}
   CONTACT EMAIL ADDRESS
@@ -48,10 +144,6 @@ be taught over two full days of instruction.
     to-be-announced
   {% endif %}
   for more information.
-</p>
-
-
-<p style = "color:red;"><strong>Registration:</strong> Please complete the online registration form at <a href="https://forms.gle/EmrC8S5e3ERuDKZV7">https://forms.gle/EmrC8S5e3ERuDKZV7</a>. Limited space is available. The workshop is free to attend but a R500 no-show fee will be payable by a registered participant who does not show up to the workshop without giving the workshop organisers at least 3 days notice.
 </p>
 
 <hr/>
