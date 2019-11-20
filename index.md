@@ -28,6 +28,8 @@ be taught over two full days of instruction.
 <p style = "color:red;"><strong>Registration:</strong> Please complete the online registration form at <a href="https://forms.gle/EmrC8S5e3ERuDKZV7">https://forms.gle/EmrC8S5e3ERuDKZV7</a>. Limited space is available. The workshop is free to attend but a R500 no-show fee will be payable by a registered participant who does not show up to the workshop without giving the workshop organisers at least 3 days notice.
 </p>
 
+The workshop is part of a series of Digital Literacy workshops supported by the Big Data and Informatics Research Flagship and funded through the University Capacity Development Programme (UCDP) at UKZN.
+
 {% comment %}
   AUDIENCE
 
